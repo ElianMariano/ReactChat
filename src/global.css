@@ -1,0 +1,14 @@
+:root {
+    --background-primary: rgb(29, 93, 190);
+    --background-secondary: rgb(163, 182, 245);
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: var(--background-secondary);
+}

@@ -1,0 +1,75 @@
+div.register {
+    background-color: var(--background-primary);
+    width: 80vw;
+    margin: 10vh 10vw;
+    border-radius: 4px;
+    padding: 10px;    
+    font-family: 'Roboto', sans-serif;
+}
+
+div.register,
+div.register > div > a,
+div.register > a {
+    color: white;
+}
+
+div.register > label,
+div.register > input[type=text],
+div.register > input[type=password],
+div.register > div {
+    font-size: 1em;
+    margin: 10px;
+}
+
+div.register > input[type=text],
+div.register > input[type=password] {
+    margin: 10px;
+    width: calc(100% - 20px);
+    height: 36px;
+}
+
+div.register > button {
+    border: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    padding: 10px;
+    margin: 10px;
+    width: calc(100% - 20px);
+    font-size: 1em;
+}
+
+@media only screen and (min-width: 1400px) {
+    div.register {
+        background-color: var(--background-primary);
+        width: 20vw;
+        margin: 20vh auto;
+        border-radius: 4px;
+        padding: 20px;    
+        font-family: 'Roboto', sans-serif;
+    }
+
+    div.register > input[type=text],
+    div.register > input[type=password],
+    div.register > button {
+        border: none;
+        border-radius: 5px;
+    }
+    
+    div.register > input[type=text],
+    div.register > input[type=password] {
+        margin: 10px;
+        width: calc(100% - 20px);
+        height: 40px;
+    }
+    
+    div.register > button {
+        border: none;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 500;
+        padding: 10px;
+        margin: 10px;
+        width: calc(100% - 20px);
+        font-size: 1em;
+    }
+}
+  

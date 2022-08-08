@@ -1,0 +1,75 @@
+div.reset {
+    background-color: var(--background-primary);
+    width: 80vw;
+    margin: 10vh 10vw;
+    border-radius: 4px;
+    padding: 10px;    
+    font-family: 'Roboto', sans-serif;
+}
+
+div.reset,
+div.reset > div > a,
+div.reset > a {
+    color: white;
+}
+
+div.reset > label,
+div.reset > input[type=text],
+div.reset > input[type=password],
+div.reset > div {
+    font-size: 1em;
+    margin: 10px;
+}
+
+div.reset > input[type=text],
+div.reset > input[type=password] {
+    margin: 10px;
+    width: calc(100% - 20px);
+    height: 36px;
+}
+
+div.reset > button {
+    border: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    padding: 10px;
+    margin: 10px;
+    width: calc(100% - 20px);
+    font-size: 1em;
+}
+
+@media only screen and (min-width: 1400px) {
+    div.reset {
+        background-color: var(--background-primary);
+        width: 20vw;
+        margin: 20vh auto;
+        border-radius: 4px;
+        padding: 20px;    
+        font-family: 'Roboto', sans-serif;
+    }
+
+    div.reset > input[type=text],
+    div.reset > input[type=password],
+    div.reset > button {
+        border: none;
+        border-radius: 5px;
+    }
+    
+    div.reset > input[type=text],
+    div.reset > input[type=password] {
+        margin: 10px;
+        width: calc(100% - 20px);
+        height: 40px;
+    }
+    
+    div.reset > button {
+        border: none;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 500;
+        padding: 10px;
+        margin: 10px;
+        width: calc(100% - 20px);
+        font-size: 1em;
+    }
+}
+  

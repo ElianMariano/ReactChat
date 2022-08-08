@@ -1,0 +1,101 @@
+div.chat-container > div.chat-box {
+    height: 70vh;
+    background-color: var(--background-primary);
+    margin: 20px;
+    border-radius: 10px;
+    overflow-y: scroll;
+}
+
+div.chat-container > div.chat-box > p.left,
+div.chat-container > div.chat-box > p.right {
+    padding: 10px;
+    margin: 10px;
+    background-color: var(--background-secondary);
+    width: max-content;
+    color: #444;
+    border-radius: 10px;
+    font-family: 'Roboto', Courier, monospace;
+    font-weight: 600;
+}
+
+div.chat-container > div.chat-box > p.right {
+    margin-left: auto;
+}
+
+div.chat-container > div.top > p,
+div.chat-container > div.top > button {
+    display: inline-block;
+}
+
+div.chat-container > div.top > p {
+    float: right;
+    margin: 5px;
+    font-family: 'Roboto', Courier, monospace;
+    font-size: 1.2em;
+}
+
+div.chat-container > div.top > button {
+    border: none;
+    border-radius: 4px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    padding: 4px;
+    margin: 4px;
+    width: 80px;
+    font-size: 0.8em;
+    background-color: var(--background-primary);
+    color: white;
+}
+
+div.chat-container > div.message {
+    position: fixed;
+    bottom: 0;
+    height: 6vh;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+div.chat-container > div.message > input {
+    height: 100%;
+    flex: 8;
+}
+
+div.chat-container > div.message > button {
+    border: none;
+    border-radius: 4px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    padding: 4px;
+    height: 100%;
+    font-size: 1em;
+    background-color: var(--background-primary);
+    color: white;
+    flex: 2;
+}
+
+@media only screen and (min-width: 600px) {
+    div.chat-container > div.top > p,
+    div.chat-container > div.top > button {
+        margin: 20px;
+    }
+
+    div.chat-container > div.chat-box {
+        width: 40vw;
+        margin: 0 auto;
+    }
+
+    div.chat-container > div.top > p,
+    div.chat-container > div.top > button {
+        font-size: 1.4em;
+    }
+
+    div.chat-container > div.message > input {
+        flex: 9;
+    }
+
+    div.chat-container > div.message > button {
+        flex: 1;
+        font-size: 1.4em;
+    }
+}
